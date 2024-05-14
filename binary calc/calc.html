@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="calculator.png"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Binary Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <input id="user_input" placeholder="0">
+      <br>
+      <button class="btn" onclick="press('1')">1</button>
+      <button class="btn" onclick="press('0')">0</button>
+      <button style="background:#ffb84d;" class="btn" onclick="press('+')">+</button>
+      <button style="background: #ffcc80;" class="btn" onclick="press('-')">-</button>
+      <br>
+      <button class="btn" onclick="erase()">C</button>
+      <button style="background: #ffe0b3;" class="btn" onclick="press('*')">*</button>
+      <button style="background: #fff5e6;" class="btn" onclick="press('/')">/</button>
+      <br>
+      <button class="btnEqual" onclick="equal()">=</button>
+    </div>
+  </div>
+  <script src="calc.js"></script>
+</body>
+</html>
